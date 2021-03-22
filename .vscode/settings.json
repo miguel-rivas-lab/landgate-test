@@ -1,0 +1,15 @@
+{
+  "editor.detectIndentation": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "standard.autoFixOnSave": true,
+  "workbench.colorCustomizations": {
+    "editorWhitespace.foreground": "#8a50cc",
+    "activityBar.background": "#6b0d77",
+    "activityBar.foreground": "#ffffff",
+    "activityBar.inactiveForeground": "#ffffff75",
+    "activityBar.activeBorder": "#ffffff60",
+    "activityBar.activeBackground": "#ffffff00",
+  }
+}

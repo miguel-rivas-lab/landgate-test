@@ -1,0 +1,39 @@
+<section>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Work Title</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of personas">
+        <td>
+          <icon glyph="user"></icon>
+        </td>
+        <td>{{user.firstName}}</td>
+        <td>{{user.lastName}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.workTitle}}</td>
+        <td>
+          <button>
+            <icon glyph="pencil"></icon>
+          </button>
+          <button>
+            <icon glyph="check-circle"></icon>
+          </button>
+          <button>
+            <icon glyph="times-circle"></icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<!-- TODO: Show all people on this screen
+  TODO Implement a person-component that displays the details of a person.
+Add a way to select and then edit a individual person.  There should be options to save and cancel the edit.  Cancelling an edit will result in no changes being made to the selected person. -->

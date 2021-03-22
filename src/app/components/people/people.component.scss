@@ -1,0 +1,39 @@
+section {
+  padding: 15px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0 .25rem;
+  border-collapse: separate;
+
+  tr {
+    transition: all ease 200ms;
+  }
+
+  td, th {
+    padding: 8px 15px;
+
+    &:first-child {
+      border-radius: 10px 0 0 10px;
+    }
+    &:last-child {
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  td {
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    opacity: .7;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

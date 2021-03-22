@@ -1,0 +1,59 @@
+.theme-light {
+  & {
+    background-color: gcolor('white');
+    color: gcolor('boulder');
+  }
+
+  a, button {
+    color: gcolor('boulder');
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  nav {
+    background-color: gcolor('solitude');
+  
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+  }
+
+  h1 {
+    color: #d81c72;
+  }
+
+  footer {
+    background-color: gcolor('solitude');
+  }
+
+  table {
+    thead {
+      th {
+        background-color: #ecedf3;
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(even) {
+          td {
+            background-color: #f3f3f3;
+          }
+        }
+        &:nth-child(odd) {
+          td {
+            background-color: #f9f9f9;
+          }
+        }
+
+        &:hover {
+          filter: drop-shadow(0px 2px 5px rgba(0,0,0,.1));
+        }
+      }
+    }
+  }
+
+  #bunny {
+    display: none;
+  }
+}

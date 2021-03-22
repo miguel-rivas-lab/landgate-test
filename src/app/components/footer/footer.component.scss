@@ -1,0 +1,31 @@
+footer {
+  min-height: 110px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .column {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    @media (min-width: 500px) {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      width: 135px;
+      text-align: left;
+    }
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding-left: 0;
+    font-size: 13px;
+    list-style: none;
+    margin-bottom: 0;
+  }
+}

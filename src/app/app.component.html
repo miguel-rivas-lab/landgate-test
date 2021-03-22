@@ -1,0 +1,5 @@
+<main class="theme-{{currentTheme}}">
+  <app-header (themeEvent)="getTheme($event)"></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</main>

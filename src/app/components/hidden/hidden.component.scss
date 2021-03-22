@@ -1,0 +1,71 @@
+section {
+  position: relative;
+
+  #bunny {
+    position: absolute;
+    bottom: -39px;
+    right: 30px;
+    width: 170px;
+
+    .foot,
+    .rabbit,
+    .hand,
+    .carrot {
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+      animation-timing-function: ease;
+      animation-duration: 1500ms;
+    }
+
+    .foot {
+      animation-name: foot;
+    }
+    .rabbit {
+      animation-name: rabbit;
+    }
+    .hand {
+      animation-name: rabbit;
+    }
+    .carrot {
+      animation-duration: 1350ms;
+      animation-name: carrot;
+    }
+  }
+}
+
+@keyframes foot {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(-80px);
+  }
+}
+
+@keyframes rabbit {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes carrot {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(90px);
+  }
+}

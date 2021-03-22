@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap";
+@import "assets/stylesheets/variables";
+@import "assets/stylesheets/mixins";
+@import "assets/stylesheets/functions";
+@import "assets/stylesheets/theme-light";
+@import "assets/stylesheets/theme-dark";
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v14/XRXV3I6Li01BKofINeaB.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v14/XRXW3I6Li01BKofAjsOUYevI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: $nunito;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h1, h2, .navbar-brand {
+  font-weight: 700;
+}
+
+section {
+    min-height: calc(100vh - #{$footer-height + $header-height});
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
